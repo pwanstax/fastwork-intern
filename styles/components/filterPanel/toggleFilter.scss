@@ -1,0 +1,22 @@
+.toggle-container {
+  right: 0px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  .professional-toggle {
+    height: 26px;
+
+    img {
+      margin-right: 5px;
+    }
+
+    input:checked {
+      background-color: var(--color-primary-500);
+    }
+  }
+  p {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

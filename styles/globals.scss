@@ -1,0 +1,43 @@
+@import "~biomatic/dist/biomatic.atomic.min.css";
+@import "~biomatic/dist/biomatic.layout.min.css";
+@import "~biomatic/dist/biomatic.lite.min.css";
+@import "~biomatic/dist/biomatic.min.css";
+
+@import "~@fastwork/turbine/dist/turbine.css";
+@import "~@fastwork/turbine/dist/atomic.css";
+
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+@import "@fortawesome/fontawesome-free/css/all";
+
+@import url("https://fonts.googleapis.com/css?family=Kanit:400,500,600");
+
+@import "./pages/mainPage.scss";
+@import "./pages/productDetailPage.scss";
+@import "./components/layout/main-navigation.scss";
+@import "./components/layout/sub-navigation.scss";
+@import "./components/layout/breadcrumb.scss";
+@import "./components/pagination.scss";
+@import "./components/filterPanel/filterPanel.scss";
+@import "./components/filterPanel/typeFilter.scss";
+@import "./components/filterPanel/styleFilter.scss";
+@import "./components/filterPanel/allFilter.scss";
+@import "./components/filterPanel/toggleFilter.scss";
+@import "./components/productCard.scss";
+@import "./components/promoitons.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  font-family: "Kanit", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", sans-serif;
+  box-sizing: inherit;
+}

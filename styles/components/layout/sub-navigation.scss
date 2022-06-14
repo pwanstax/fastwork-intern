@@ -1,0 +1,85 @@
+.sub-nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      .border-bottom {
+        display: none;
+        border-bottom: 2px solid #f51c40;
+        border-width: 3px;
+        border-color: var(--color-primary-500);
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        width: 70%;
+      }
+      &:hover .border-bottom {
+        display: block;
+      }
+
+      .dropbtn {
+        background-color: transparent;
+        color: var(--color-gray-700);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--color-gray-100);
+          color: var(--color-primary-500);
+        }
+      }
+
+      .dropdown-content {
+        display: none;
+      }
+      &:hover .dropdown-content {
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        grid-gap: 7px;
+        padding: 16px;
+        padding-bottom: 24px;
+        .sub-content {
+          width: 190px;
+          p {
+            width: 190px;
+            font-family: var(--font-family-secondary);
+            padding-left: 7px;
+            margin-bottom: 7px;
+            font-style: bold;
+            font-family: var(--font-family-secondary);
+            font-weight: 600;
+          }
+
+          button {
+            text-align: left;
+            padding: 7px;
+            font-size: var(--font-size-300);
+            width: 190px;
+            font-family: var(--font-family-primary);
+            border-width: 0px;
+            background-color: white;
+            border-radius: 4px;
+            color: #485261;
+            cursor: pointer;
+            &:hover {
+              background-color: var(--color-primary-200);
+              color: var(--color-primary-400);
+            }
+          }
+        }
+      }
+      .dropdown-content-right {
+        right: 0px;
+      }
+    }
+  }
+}

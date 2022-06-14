@@ -1,0 +1,30 @@
+.breadcrumb-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+
+.breadcrumb {
+  width: 1064px;
+
+  li {
+    display: inline;
+    font-size: var(--font-size-400) !important;
+    a {
+      transition: all 160ms ease-in-out;
+      color: var(--color-primary-500);
+      text-decoration: none;
+      &:hover {
+        color: var(--color-primary-600);
+      }
+    }
+  }
+  li + li:before {
+    padding: 8px;
+    color: hsl(216, 15%, 86%);
+    width: 0.425rem;
+    height: 0.425rem;
+    content: ">";
+  }
+}

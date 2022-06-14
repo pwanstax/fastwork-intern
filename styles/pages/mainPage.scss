@@ -1,0 +1,43 @@
+.page-container {
+  padding: 2rem 0;
+  max-width: 1064px;
+  margin: auto;
+  h1 {
+    font-size: var(--font-size-700);
+  }
+}
+
+.promotion-section {
+  height: 182px;
+  width: 100%;
+  margin: 1.5rem 0rem;
+}
+
+.filter-panel {
+  width: 100%;
+  margin: 1.5rem 0rem;
+  margin-top: 2rem;
+}
+
+.under-filter {
+  margin: 0.75rem 0rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+
+  .first {
+    text-align: left;
+  }
+  .last {
+    text-align: right;
+  }
+}
+
+.product-list {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 20px;
+  grid-template-columns: auto auto auto auto auto;
+  flex-shrink: 0;
+}
