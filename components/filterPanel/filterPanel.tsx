@@ -17,7 +17,7 @@ const FilterPanel: React.FC = () => {
     if (!!typeof window) {
       window.onclick = function (event) {
         var btn = event.target! as HTMLButtonElement;
-        // console.log(btn.className);
+        console.log(btn.className);
         if (btn.id === "style") {
           setTypeStatus(false);
         }

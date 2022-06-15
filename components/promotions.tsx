@@ -13,7 +13,7 @@ const Promotions: React.FC = () => {
     if (typeof window !== "undefined") {
       let i;
       let slides = document.getElementsByClassName(
-        "mySlides"
+        "promotion-slides"
       ) as HTMLCollectionOf<HTMLElement>;
       let dots = document.getElementsByClassName("dot");
       if (n > slides.length) {
@@ -83,27 +83,27 @@ const Promotions: React.FC = () => {
       </div>
 
       <div className="slideshow-container">
-        <div className="mySlides fade">
+        <div className="promotion-slides fade">
           <img
             src="https://images.ctfassets.net/fm8byl79je66/5Z6LT7Z6Pn6MpadouhL6JA/637a703c89bea9b25ed5116a01b39608/2-guarantee-Subcat-347x182.jpg"
             width="350px"
           />
         </div>
 
-        <div className="mySlides fade">
+        <div className="promotion-slides fade">
           <img
             src="https://images.ctfassets.net/fm8byl79je66/2gh6cbsZmRLpF6CiTysxFq/bdecebff8677555b674c7d83dd78d891/PA-Banner_Subcat-Banner_347x182_02.jpg"
             width="350px"
           />
         </div>
 
-        <div className="mySlides fade">
+        <div className="promotion-slides fade">
           <img
             src="https://images.ctfassets.net/fm8byl79je66/5ZRHDCFjodRPoQDeLSOnXi/8b0f523a142959f490a43ee4699da44a/_DM_2020-05-20-Banner-Milestone-HB_desktop.jpg"
             width="350px"
           />
         </div>
-        <div className="mySlides fade">
+        <div className="promotion-slides fade">
           <img
             src="https://images.ctfassets.net/fm8byl79je66/2x6eQe4hckoTI6eH3IE1vy/223d4702cc4dc02e2b9d5a830f5547dc/AW2-FW-alert-Subcat-347x182.jpg"
             width="350px"

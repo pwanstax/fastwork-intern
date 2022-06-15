@@ -1,0 +1,26 @@
+.info-container {
+  grid-area: info-container;
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  grid-row-gap: 24px;
+  margin-bottom: 48px;
+
+  h1 {
+    font-size: var(--font-size-700);
+    color: var(--color-primary-500) !important;
+  }
+  strong {
+    font-family: var(--font-family-primary);
+  }
+  ul {
+    padding-left: 16px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  .all-package {
+    h1 {
+      margin-bottom: 12px;
+      font-size: var(--font-size-600);
+    }
+  }
+}

@@ -51,9 +51,7 @@ const ProductCard: React.FC<Props> = ({name, product_image, id}) => {
   useEffect(() => {
     getUser();
   }, []);
-  // const username = "Barbara Champlin";
-  // const avatar =
-  //   "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/121.jpg";
+
   return (
     <div
       onClick={(e) => toDetail(e)}

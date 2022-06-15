@@ -1,7 +1,12 @@
 .pdetail-layout {
-  padding: 2rem 15%;
+  width: 1064px;
+  margin: auto;
   display: grid;
-  justify-items: center;
-  gap: 20px 20px;
-  grid-template-columns: auto;
+  padding-top: 32px;
+  grid-gap: 2.5rem;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr 320px;
+  grid-template-areas:
+    "gallery-container gallery-container"
+    "info-container package-container";
 }

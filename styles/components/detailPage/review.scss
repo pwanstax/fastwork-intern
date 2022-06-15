@@ -1,0 +1,39 @@
+.review-box {
+  width: 100%;
+  img {
+    border-radius: 50%;
+  }
+}
+.score-box {
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  margin-bottom: 24px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  .part-point {
+    padding: 0px 80px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 16px;
+    grid-column-gap: 80px;
+    grid-row-gap: 24px;
+    .each {
+      p {
+        margin-bottom: 12px;
+      }
+      .star-box {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        width: 100%;
+        color: var(--color-warning-500);
+      }
+    }
+  }
+}

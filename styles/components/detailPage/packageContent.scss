@@ -1,0 +1,169 @@
+.package-container {
+  grid-area: package-container;
+  .package-content {
+    position: sticky !important;
+    top: 30px;
+    .package-panel {
+      border: 1px solid var(--color-gray-300);
+      border-radius: 4px;
+      background: #fff;
+      .choose-plan {
+        display: flex;
+        button {
+          position: relative;
+          margin: 0;
+          border-radius: 0;
+          background-color: var(--color-gray-100);
+          color: var(--color-gray-500);
+          padding: 1.25rem 0;
+          font-weight: var(--font-weight-bolder);
+          &:hover {
+            background-color: var(--color-gray-100);
+            color: var(--color-primary-500);
+          }
+        }
+        .border-bottom {
+          display: none;
+          border-bottom: 0.2rem solid var(--color-primary-500);
+          position: absolute;
+          bottom: 0;
+          left: 15%;
+          width: 70%;
+        }
+        .active {
+          background: white;
+          color: var(--color-primary-500);
+          .border-bottom {
+            display: block;
+          }
+          &:hover {
+            background-color: white;
+          }
+        }
+        #right {
+          border-top-right-radius: 4px;
+        }
+        #left {
+          border-top-left-radius: 4px;
+        }
+      }
+      .main-plan {
+        padding: 1.5rem;
+      }
+      strong {
+        color: var(--color-primary-500) !important;
+      }
+      p {
+        color: var(--color-dark-secondary);
+        font-size: var(--font-size-300);
+      }
+      li {
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        // grid-template-columns: auto auto;
+        .left {
+          font-weight: var(--font-weight-bolder);
+          color: var(--color-dark-primary);
+        }
+        .right {
+          color: var(--color-primary-500);
+          font-weight: var(--font-weight-bolder);
+        }
+      }
+      hr {
+        margin-top: 16px;
+      }
+      .package-checkbox {
+        font-weight: 600;
+        font-size: var(--font-size-400);
+        padding: 8px;
+        margin-top: 16px;
+        padding-left: 0px;
+        border-radius: 4px;
+        border-width: 0px;
+        color: var(--color-dark-primary);
+        background-color: white;
+        font-family: var(--font-family-secondary, --font-family-primary);
+        width: 100%;
+        text-align: right;
+        display: grid;
+        grid-template-columns: 90% 10%;
+        cursor: pointer !important;
+        label {
+          display: flex;
+          justify-content: left;
+        }
+        input {
+          display: flex;
+          justify-content: right;
+          margin: auto;
+        }
+        &:hover {
+          background-color: var(--color-gray-100);
+        }
+      }
+      .under {
+        font-size: var(--font-size-200) !important;
+        margin-top: 4px;
+        a {
+          color: var(--color-primary-500);
+          font-family: var(--font-family-primary);
+        }
+      }
+      button {
+        font-family: var(--font-family-secondary);
+        font-weight: 300;
+        font-size: 1rem;
+        color: hsla(0, 0%, 100%, 0.95);
+        background-color: var(--color-primary-500);
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.875rem;
+        padding: 0.5rem 1.5rem;
+        margin-top: 16px;
+        transition: all 0.16s ease-in-out;
+        user-select: none;
+        text-transform: none;
+        outline: none;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--color-primary-600);
+        }
+      }
+      .non-pay {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 8px;
+        color: var(--color-dark-secondary);
+        font-size: 80%;
+      }
+    }
+    .package-guarantee {
+      padding: 16px;
+      border: 1px solid var(--color-gray-300);
+      margin-top: 12px;
+      border-radius: 4px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      p {
+        font-size: var(--font-size-300);
+        line-height: var(--line-height-paragraph);
+        color: var(--color-dark-primary);
+        a {
+          color: var(--color-primary-500);
+          font-family: var(--font-family-primary);
+        }
+      }
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+}

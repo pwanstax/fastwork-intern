@@ -1,0 +1,45 @@
+.seller-info-container {
+  border: 1px solid var(--color-gray-300);
+  .seller-description {
+    padding: 32px;
+    img {
+      border-radius: 50%;
+      height: 93px;
+      width: 93px;
+    }
+    .top-box {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      .seller-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+          font-size: var(--font-size-500);
+          font-weight: var(--font-weight-bolder);
+          color: var(--color-dark-primary) !important;
+        }
+      }
+    }
+  }
+  .seller-stat {
+    width: 100%;
+    padding: 24px 32px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-items: center;
+    div {
+      display: grid;
+      grid-template-columns: auto;
+      justify-items: center;
+      align-items: center;
+      strong {
+        font-family: var(--font-family-secondary);
+        color: var(--color-primary-500);
+        font-weight: var(--font-weight-bolder);
+        font-size: var(--font-size-500);
+        margin-top: 8px;
+      }
+    }
+  }
+}
